@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Analista de Dados</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 0 1.5rem; }
+        
+        .container { max-width: 920px; margin: 0 auto; }
+        
+        header { padding: 4rem 0 2rem; text-align: center; }
+        .badge-ufra {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+        }
+        
+        header h1 { font-size: 2.8rem; color: #ffffff; margin-bottom: 0.5rem; }
+        header .subtitle { font-size: 1.2rem; color: var(--primary); font-weight: 500; margin-bottom: 1.5rem; }
+        
+        .social-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .btn-social {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .btn-social:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-2px); }
+        .btn-primary { background: var(--primary); color: #0f172a; border: none; font-weight: 600; }
+        .btn-primary:hover { background: #7dd3fc; color: #0f172a; }
+
+        section { margin: 3rem 0; }
+        h2 { font-size: 1.75rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: #ffffff; }
+        
+        .about-box { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; }
+        .about-box p { margin-bottom: 1rem; color: #cbd5e1; font-size: 1.05rem; }
+        .about-box p:last-child { margin-bottom: 0; }
+        
+        .highlight { color: var(--primary); font-weight: 600; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, border-color 0.2s; }
+        .card:hover { transform: translateY(-4px); border-color: var(--primary); }
+        .card h3 { color: var(--primary); font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .card p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 1rem; }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.2rem; }
+        .tag-mini { background: #334155; color: #94a3b8; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 500; }
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .github-link:hover { text-decoration: underline; }
+
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+        .tag { background: #1e293b; border: 1px solid var(--border-color); color: var(--primary); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; }
+
+        footer { text-align: center; padding: 3rem 0 1.5rem; color: var(--text-muted); font-size: 0.875rem; border-top: 1px solid var(--border-color); margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="badge-ufra">🎓 Integrante do Projeto ApoIA — UFRA</div>
+            <h1>Giovanna Cordeiro</h1>
+            <p class="subtitle">Analista de Dados | Python • SQL • Power BI • Machine Learning</p>
+            
+            <div class="social-links">
+                <!-- Substitua 'seu-perfil' pelo seu nome de usuário do LinkedIn -->
+                <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="btn-social btn-primary">
+                    🔗 LinkedIn
+                </a>
+                <!-- Substitua 'seu-usuario' pelo seu usuário do GitHub -->
+                <a href="https://github.com/seu-usuario" target="_blank" class="btn-social">
+                    💻 GitHub
+                </a>
+                <a href="mailto:giovannacordeiro@discente.ufra.edu.br" class="btn-social">
+                    ✉️ E-mail
+                </a>
+            </div>
+        </header>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="about-box">
+                <p>Atuo na área de <span class="highlight">Análise de Dados</span>, com foco na transformação de dados brutos em inteligência e tomada de decisão estratégica.</p>
+                <p>Faço parte do projeto <span class="highlight">ApoIA</span> na <span class="highlight">Universidade Federal Rural da Amazônia (UFRA)</span>, onde desenvolvo e aplico soluções baseadas em dados e inteligência artificial aplicadas à resolução de problemas complexos.</p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos no GitHub</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <div>
+                        <h3>Análise Exploratória de Dados (EDA)</h3>
+                        <p>Análise de datasets com limpeza de dados, identificação de padrões, tratamento de nulos e geração de visões estatísticas.</p>
+                        <div class="card-tags">
+                            <span class="tag-mini">Python</span>
+                            <span class="tag-mini">Pandas</span>
+                            <span class="tag-mini">Seaborn</span>
+                            <span class="tag-mini">Jupyter</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/seu-usuario/nome-do-repositorio" target="_blank" class="github-link"> Ver no GitHub ↗</a>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>Dashboards e Business Intelligence</h3>
+                        <p>Construção de painéis interativos para acompanhamento de KPIs, análise visual e suporte a decisões de negócios.</p>
+                        <div class="card-tags">
+                            <span class="tag-mini">Power BI</span>
+                            <span class="tag-mini">SQL</span>
+                            <span class="tag-mini">Data Viz</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/seu-usuario/nome-do-repositorio" target="_blank" class="github-link"> Ver no GitHub ↗</a>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>Modelos Preditivos / ApoIA</h3>
+                        <p>Projetos e scripts focados em automação, aprendizado de máquina e classificação desenvolvidos com suporte à pesquisa no projeto ApoIA.</p>
+                        <div class="card-tags">
+                            <span class="tag-mini">Python</span>
+                            <span class="tag-mini">Scikit-Learn</span>
+                            <span class="tag-mini">IA / ApoIA</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/seu-usuario/nome-do-repositorio" target="_blank" class="github-link"> Ver no GitHub ↗</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-list">
+                <span class="tag">Python (Pandas, NumPy, Matplotlib/Seaborn)</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">Análise Exploratória de Dados (EDA)</span>
+                <span class="tag">Machine Learning & IA</span>
+                <span class="tag">Git & GitHub</span>
+                <span class="tag">Excel Avançado</span>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="about-box" style="text-align: center;">
+                <p>Gostou do meu perfil? Entre em contato para oportunidades ou parcerias.</p>
+                <div class="social-links" style="margin-top: 1.2rem; margin-bottom: 0;">
+                    <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="btn-social btn-primary">Conectar no LinkedIn</a>
+                    <a href="mailto:giovannacordeiro@discente.ufra.edu.br" class="btn-social">Enviar E-mail</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Giovanna Cordeiro • Projeto ApoIA / UFRA</p>
+        </footer>
+    </div>
+
+</body>
+</html>
